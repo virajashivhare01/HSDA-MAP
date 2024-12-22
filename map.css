@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, input, button, select, textarea, .leaflet-container, .leaflet-control, .leaflet-popup-content, .marker-cluster div {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #0F1B79;
+    font-weight: 700;
+}
+
+p.description {
+    text-align: center;
+    margin: 10px auto 20px;
+    width: 90%;
+    max-width: 800px;
+    color: #333;
+    font-size: 16px;
+}
+
+#map {
+    height: 80vh;
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#info-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    font-size: 15px;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#info-box h4 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0F1B79;
+}
+
+#info-box p {
+    margin: 5px 0;
+    font-weight: 700;
+    color: #000;
+}
+
+#info-box p span {
+    font-weight: 400;
+}
+
+#default-message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    font-size: 15px;
+    color: #0F1B79;
+    font-weight: 700;
+    z-index: 1000;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    background: url('chapter.png') no-repeat center/cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+    background-color: #0F1B79 !important;
+    border: 2px solid #fff;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.marker-cluster div {
+    background-color: inherit;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#logo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 120px;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+#exit-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #0F1B79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#exit-button.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#exit-button:hover {
+    background-color: #084298;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSDA Chapters Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="map.css">
+</head>
+<body onload="initializeMap()">
+
+    <div id="map">
+        <div id="default-message" class="message-box">Hover over a state</div>
+        <div id="info-box" class="hidden">
+            <div id="state-details">
+                <h4 id="state-name">State Details</h4>
+                <p><strong>Chair: </strong> <span id="state-chair">N/A</span></p>
+            </div>
+        </div>
+        <button id="exit-button" class="hidden">Exit</button>
+        <img id="logo" src="hsda.png" alt="HSDA Logo" />
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+    
+    <script src="map.js"></script>
+</body>
+</html>
