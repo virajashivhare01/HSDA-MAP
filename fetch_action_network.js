@@ -1,8 +1,8 @@
 import fs from 'fs/promises';
 import fetch from 'node-fetch';
 
-const apiKey = "d9e749fe3965ee26e4c940d7721a1fd2"; // Replace with your API key or use environment variables
-const formId = "20b799a3-1129-4807-a14e-d89600c5b607"; // Replace with your form ID or use environment variables
+const apiKey = process.env.API_KEY; // Replace with your API key or use environment variables
+const formId = process.env.FORM_ID; // Replace with your form ID or use environment variables
 
 const latestSubmissionByPersonLink = {};
 let reportData = [];
